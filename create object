@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>kavi</title>
+</head>
+<body>
+
+    <h1>kavi</h1>
+    <script>
+        const person = {firstName:"Yuva", lastName:"Teja", age:20, eyeColor:"black"};
+        console.log(person)
+    </script>
+</body>
+</html>
