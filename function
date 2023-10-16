@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Function</title>
+    </head>
+<body>
+
+<h1>Function</h1>
+
+<script>
+let x = myFunction(88, 33);
+
+function myFunction(a, b) {
+  return a * b;
+}
+console.log(x);
+</script>
+
+</body>
+</html>
