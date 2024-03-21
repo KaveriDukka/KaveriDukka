@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <input type = "number" placeholder = "first number" id="fn">
+    <input type = "number" placeholder = "second number" id="sn">
+    <input type = "Submit" onclick="Submit()">
+    <div Id = "result" ></div>
+</body>
+<script>
+    function Submit() {
+        let x =document.getElementById("fn").value;
+       x = parseInt(x); 
+      let y = document.getElementById("sn").value;
+      y = parseInt(y);
+      const z = x+y;
+document.getElementById("result").innerHTML=(z);
+    }
+</script>
+</html>

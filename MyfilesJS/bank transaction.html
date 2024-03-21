@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>bank transactions</title>
+    </head>
+    <body> 
+        <h1>Bank</h1>
+        <input type = "submit" value = "Account details" onclick ="Login()">
+        <input type = "submit" value = "Withdraw Amount" onclick ="WithdrawAmount()">
+    <script>
+        let Amount = 25000;
+        let userid = "kaveri284";
+        let Originalpin = 3355;
+
+    
+        function Login() {
+            let id = prompt("Enter your id");
+            let pin = +prompt("enter your pin number");
+
+            if( (id===userid) && (pin===Originalpin)) {
+            alert("login successfully");
+            alert("Account number is 63032");
+            alert("Account balance is " +Amount);
+            }
+            else{
+                 alert("Invalid id or pin number"); 
+            }
+        }
+
+            function WithdrawAmount(){
+                let id = prompt("Enter your id");
+                let pin = +prompt("enter your pin number");
+                if( (id===userid) && (pin===Originalpin)){
+                    alert("Login Successfully");
+                    let debit = +prompt("Enter your Amount");
+                    let Balanceamount = Amount-debit;
+                    if(debit<=Amount){
+                        alert("Transaction succresful")
+                        alert("Transaction was successful" +Balanceamount );
+                    }
+                    else if(debit>Amount) {
+                        alert("Insufficient balance");
+                    } 
+                    else {
+                        alert("Enter a valid amount");
+                    }
+                }
+                else{
+                    alert("Invalid id or pin number");
+                }
+            }
+    </script>
+    </body>
+</html>
